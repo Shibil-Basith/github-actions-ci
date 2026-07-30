@@ -1,0 +1,11 @@
+name: CI workflow
+on:
+  push:
+jobs:
+  runs-on: ubuntu-latest
+  env:
+    name: Shibil
+  steps:
+    - name: checkout repository
+      uses: actions/checkout@v4
+    - name: echo "Name is: $name"
